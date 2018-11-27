@@ -10,7 +10,7 @@ window.onscroll = function showHeader () {
 (function() {
     'use strict';
 
-    var btnScrollDown = document.querySelector('#scroll-down');
+    var btnScrollDown = document.getElementById('scroll-down');
 
     function scrollDown() {
         var windowCoords = document.documentElement.clientHeight;
@@ -27,3 +27,34 @@ window.onscroll = function showHeader () {
 
     btnScrollDown.addEventListener('click', scrollDown);
 })();
+
+var lis = document.getElementsByTagName('li');
+for (var i = 0; i < lis.length; i++) {
+    lis[i].style.position = 'relative';
+    var span = document.createElement('span');
+}
+
+var width = 150; // ширина изображения
+var count = 2; // количество изображений
+
+var carousel = document.getElementById('carousel');
+var list = carousel.querySelector('ul');
+var listElems = carousel.querySelectorAll('li');
+
+var position = 1; // текущий сдвиг влево
+
+document.querySelector('.prev').onclick = function() {
+    // сдвиг влево
+    // последнее передвижение влево может быть не на 3 f yf crjkmrj jcnfytymncz
+    position = Math.min(position + width * count, 0);
+    list.style.marginLeft = position + 'px';
+    // alert("fefe");
+};
+
+document.querySelector('.next').onclick = function() {
+    // сдвиг вправо
+    // последнее передвижение вправо может быть не на 3 f yf crjkmrj jcnfytymncz
+    position = Math.max(position - width * count, -width * (listElems.length - count));
+    list.style.marginLeft = position + 'px';
+    // alert("fefe");
+};

@@ -28,7 +28,9 @@
     </div>
      <div id="right_header">
          <nav class="wrap main_flex__nowrap flex__align-items_left">
-           <ul>
+             <input type="checkbox" name="menu" id="btn-menu" />
+             <label for="btn-menu"> menu</label>
+             <ul>
              <li><a href="#contact">Contact</a></li>
              <li><a href="#portfolio">Portfolio</a></li>
              <li><a href="#about">About</a></li>
@@ -40,7 +42,7 @@
          <div class="wrapper-btn main_flex__nowrap flex__align-items_center">
              <button type="button" class="btn" id="scroll-down"><span>View More</span></button>
          </div>
-         <div class="arrow wrapper-btn main_flex__nowrap flex__align-items_center"><img src="src/back%20icon.svg"></div>
+         <label for="scroll-down"><div  class="arrow-1 wrapper-btn main_flex__nowrap flex__align-items_center"><img src="src/back%20icon.svg"></div></label>
      </div>
  </div>
  <div id="about">
@@ -70,7 +72,7 @@
                                 <p style="margin-left: 53px;margin-top: -10px">Projects</p>
                             </div>
                         </div>
-                         <div><span style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans';font-weight: 300;" >Creative Branding</span></div>
+                         <div><span style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans', sans-serif;font-weight: 300;" >Creative Branding</span></div>
                     </div>
                      <div class="about-icon" style="margin: 20px;">
                          <div class="main_flex__nowrap_row">
@@ -94,59 +96,84 @@
                                  <p style="margin-left: 53px;margin-top: -10px">Events</p>
                              </div>
                          </div>
-                         <div><span style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans';font-weight: 300;" >Media Covarage</span></div>
+                         <div><span style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans', sans-serif;font-weight: 300;" >Media Covarage</span></div>
                      </div>
                  </div>
              </div>
          </div>
      </div>
-<!--<div id="portfolio">-->
-     <!--<div class="title">-->
-         <!--<h2>Portfolio</h2>-->
-         <!--<div class="dec main_flex__nowrap flex__align-items_center flex__jcontent_center">-->
-             <!--<div id="line-3">-->
-                 <!--<img src="src/Rectangle%202.svg">-->
-             <!--</div>-->
-         <!--</div>-->
-     <!--</div>-->
-    <!--<div class="wrap">-->
-        <!--<div id="gallery">-->
-        <!--<div class="gallery_line-1 main_flex__nowrap_row flex__jcontent_between">-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/1.svg">-->
-            <!--</div>-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/2.svg">-->
-            <!--</div>-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/3.svg">-->
-            <!--</div>-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/4.svg">-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="gallery_line-2 main_flex__nowrap_row flex__jcontent_around">-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/5.svg">-->
-            <!--</div>-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/6.svg">-->
-            <!--</div>-->
-            <!--<div class="box_img_gallery">-->
-                <!--<img src="port/7.svg">-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="wrapper-btn main_flex__nowrap flex__align-items_center">-->
-            <!--<button type="button" class="btn" id="view_more_gallery "><span>View More</span></button>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<div id="partners">-->
-    <!--<div class="title-partner main_flex__nowrap flex__align-items_center flex__jcontent_center">-->
-        <!--<h2>Thanks For Partners</h2>-->
-    <!--</div>-->
-    <!--<div class="wrap">-->
+<div id="portfolio">
+     <div class="title">
+         <h2>Portfolio</h2>
+         <div class="dec main_flex__nowrap flex__align-items_center flex__jcontent_center">
+             <div id="line-3">
+                 <img src="src/Rectangle%202.svg">
+             </div>
+         </div>
+     </div>
+    <div class="wrap">
+        <div id="gallery">
+        <div class="gallery_line-1 main_flex__nowrap_row flex__jcontent_between">
+            <div class="box_img_gallery">
+                <a href=""><img src="port/1.svg"></a>
+            </div>
+            <div class="box_img_gallery">
+                <a href=""><img src="port/2.svg"></a>
+            </div>
+            <div class="box_img_gallery">
+                <a href=""><img src="port/3.svg"></a>
+            </div>
+            <div class="box_img_gallery">
+                <a href=""><img src="port/4.svg"></a>
+            </div>
+        </div>
+        <div class="gallery_line-2 main_flex__nowrap_row flex__jcontent_around">
+            <div class="box_img_gallery">
+                <a href=""><img src="port/5.svg"></a>
+            </div>
+            <div class="box_img_gallery">
+                <a href=""><img src="port/6.svg"></a>
+            </div>
+            <div class="box_img_gallery">
+                <a href=""><img src="port/7.svg"></a>
+            </div>
+        </div>
+        </div>
+        <div class="wrapper-btn main_flex__nowrap flex__align-items_center">
+            <button type="button" class="btn" id="view_more_gallery "><span>View More</span></button>
+        </div>
+    </div>
+</div>
+<div id="partners">
+    <div class="title-partner main_flex__nowrap flex__align-items_center flex__jcontent_center">
+        <h2>Thanks For Partners</h2>
+    </div>
+    <div class="wrap">
+        <div style="display: inline-block; position: absolute;z-index: 99999"><button class="arrow-part arrow prev"><img style="height: 55px" src="src/arrows.svg"></button></div>
+        <div id="carousel" class="carousel" style="display: inline-block">
+
+            <div class="gallery">
+                <ul class="images">
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/marv.svg" alt=""></li>
+                    <li><img src="partners/Dell-part.svg" alt=""></li>
+                    <li><img src="partners/play-part.svg" alt=""></li>
+                    <li><img src="partners/indie-part.svg" alt=""></li>
+                    <li><img src="partners/Dell-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/indie-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/indie-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/cp-part.svg"></li>
+                    <li><img src="partners/indie-part.svg"></li>
+                </ul>
+            </div>
+            <!--<button class="arrow-part-1 arrow next"><img style="height: 4vh" src="src/arrows.svg"></button>-->
+        </div>
+        <div style="display: inline-block; z-index: 99999;"><button class="arrow-part-1 arrow next"><img style="height: 55px" src="src/arrows.svg"></button></div>
         <!--<div class="gallery-part main_flex__nowrap_row flex__jcontent_around">-->
             <!--<div class="box-img-part arrow-part flex__jcontent_center">-->
                 <!--<img src="src/arrows.svg">-->
@@ -160,84 +187,80 @@
                 <!--<img src="src/arrows.svg">-->
             <!--</div>-->
         <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<div id="contact">-->
-    <!--<div class="title">-->
-        <!--<h2>Contact</h2>-->
-        <!--<div class="dec main_flex__nowrap flex__align-items_center flex__jcontent_center">-->
-            <!--<div id="line-4">-->
-                <!--<img src="src/Rectangle%202.svg">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="forma">-->
-        <!--<div class="form-input">-->
-            <!--<form name="contact-form" method="post" ACTION="">-->
-            <!--<input type="text" placeholder="Your Name..." required>-->
-            <!--<input type="email" placeholder="Your Email..." required>-->
-            <!--<textarea placeholder ="Your Massage.." required></textarea>-->
-            <!--</form>-->
-            <!--<div>-->
-                <!--<button type="submit" class="" >Send</button>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div id="contact-list" class="contact-list main_flex__nowrap list">-->
-            <!--<div class="main_flex__nowrap_row flex__jcontent_around">-->
-                <!--<ul class="main_flex__nowrap contact-list" style="margin-top: 8px">-->
-                    <!--<li><span>Behance</span></li>-->
-                    <!--<li><a href=""><img src="contact/download%20(1).png" alt=""></a></li>-->
-                    <!--<li><a href=""><img src="contact/images.png" alt=""></a></li>-->
-                    <!--<li><a href=""><img src="contact/images%20(1).png" alt=""></a></li>-->
-                <!--</ul>-->
-                <!--<div class="">-->
-                    <!--<hr noshade style="height: 250px;/*высота*/ width: 0.5px;/*толщина*/">-->
+    </div>
+</div>
+<div id="contact">
+    <div class="title">
+        <h2>Contact</h2>
+        <div class="dec main_flex__nowrap flex__align-items_center flex__jcontent_center">
+            <div id="line-4">
+                <img src="src/Rectangle%202.svg">
+            </div>
+        </div>
+    </div>
+    <div class="forma">
+        <div class="form-input">
+            <form name="contact-form" method="post" ACTION="">
+                <input type="text" placeholder="Your Name..." required>
+                <input type="email" placeholder="Your Email..." required>
+                <textarea placeholder ="Your Massage..." required></textarea>
+            </form>
+            <div>
+                <button type="submit" class="" >Send</button>
+            </div>
+        </div>
+        <div id="contact-list" class="contact-list main_flex__nowrap list">
+            <div class="main_flex__nowrap_row flex__jcontent_around">
+                <ul class="main_flex__nowrap contact-list" style="margin-top: 8px">
+                    <li><span>Behance</span></li>
+                    <li><a href=""><img src="contact/download%20(1).png" alt=""></a></li>
+                    <li><a href=""><img src="contact/images.png" alt=""></a></li>
+                    <li><a href=""><img src="contact/images%20(1).png" alt=""></a></li>
+                </ul>
+                <div class="">
+                    <hr noshade style="height: 250px;/*высота*/ width: 0.5px;/*толщина*/">
+                </div>
+                <div class="main_flex__nowrap contact-list">
+                    <p> <span><a href="">www.Be.net/Marwansamir99</a></span> </p>
+                    <p> <span><a href="">Marwansamir99</a></span></p>
+                    <p> <span><a href="">www.Facebook.com/Marvan.samir2</a></span> </p>
+                    <p> <span><a href="">Marwansamiir@gmail.com</a></span> </p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="contact">-->
+            <!--<div class="main_flex__nowrap_row">-->
+                <!--<div>-->
+                    <!--<div style="display: flex; justify-content: center">-->
+                        <!--<span>Behance</span>-->
+                    <!--</div>-->
+                    <!--<div style="display: flex; justify-content: flex-end">-->
+                        <!--img-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--img-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--img-->
+                    <!--</div>-->
                 <!--</div>-->
-                <!--<div class="main_flex__nowrap contact-list">-->
-                    <!--<p> <span><a href="">www.Be.net/Marwansamir99</a></span> </p>-->
-                    <!--<p> <span><a href="">Marwansamir99</a></span></p>-->
-                    <!--<p> <span><a href="">www.Facebook.com/Marvan.samir2</a></span> </p>-->
-                    <!--<p> <span><a href="">Marwansamiir@gmail.com</a></span> </p>-->
-                <!--</div>-->
+                <!--<hr noshade style="height: 200px;/*высота*/ width: 1px;/*толщина*/">-->
+                <!--<div></div>-->
             <!--</div>-->
-        <!--</div>-->
-
-
-
-        <!--&lt;!&ndash;<div class="contact">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="main_flex__nowrap_row">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div style="display: flex; justify-content: center">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span>Behance</span>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div style="display: flex; justify-content: flex-end">&ndash;&gt;-->
-                        <!--&lt;!&ndash;img&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div>&ndash;&gt;-->
-                        <!--&lt;!&ndash;img&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div>&ndash;&gt;-->
-                        <!--&lt;!&ndash;img&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<hr noshade style="height: 200px;/*высота*/ width: 1px;/*толщина*/">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div></div>&ndash;&gt;-->
+            <!--<div class="icon-contact">-->
+                <!--<h2>Behance</h2>-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
+                <!--<img src="" alt="">-->
             <!--</div>-->
-
-            <!--&lt;!&ndash;<div class="icon-contact">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h2>Behance</h2>&ndash;&gt;-->
-                <!--&lt;!&ndash;<img src="" alt="">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img src="" alt="">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img src="" alt="">&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="contact-adr">&ndash;&gt;-->
-                <!--&lt;!&ndash;<p><a href=""></a></p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p><a href=""></a></p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p><a href=""></a></p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p><a href=""></a></p>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--</div>-->
+            <!--<span></span>-->
+            <!--<div class="contact-adr">-->
+                <!--<p><a href=""></a></p>-->
+                <!--<p><a href=""></a></p>-->
+                <!--<p><a href=""></a></p>-->
+                <!--<p><a href=""></a></p>-->
+            <!--</div>-->
+        </div>
     </div>
 </div>
  <script type="text/javascript" src="js/main.js"></script>

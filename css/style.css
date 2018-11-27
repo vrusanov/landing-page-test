@@ -11,6 +11,9 @@ a {
     color: white;
     cursor: pointer;
 }
+ul {
+    list-style: none;
+}
 .wrap {
     width: 74vm;
     margin: 0 auto;
@@ -199,8 +202,9 @@ button.btn {
     text-align: center;
     transform: scaleY(1.0008);
 }
-.arrow {
+.arrow-1 {
     padding-top: 31px;
+    cursor: pointer;
 }
 
 #text_about p {
@@ -343,6 +347,9 @@ button.btn {
     text-align: center;
 
 }
+
+
+
 .btn:hover {
     background-color: #25d8d8;
 }
@@ -357,22 +364,23 @@ button.btn {
     height: auto;
     overflow: hidden;
 }
-.arrow-part img{
+
+.arrow-part{
     height: 4vh;
-    /*width: 2vh;*/
 }
 .arrow-part-1 img {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     height: 4vh;
-    /*width: 2vh;*/
+
 }
 .wrap__flex {
     display: flex;
     flex-wrap: wrap;
     /*flex-flow: row;*/
 }
+
 #contact-list {
     font-size: 20px;
     width: 100%;
@@ -414,7 +422,7 @@ button.btn {
     border-radius: 8px;
     background-color: #f1f2f7;
     border: 1px solid #2980b9;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #bcbfc0;
     font-family: "Lato",sans-serif;
     font-style: italic;;
@@ -423,7 +431,7 @@ button.btn {
     text-align: left;
     width: 30vw;
     height: 13vh;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #bcbfc0;
     font-family: "Lato", sans-serif;
     border-radius: 8px;
@@ -465,7 +473,7 @@ button.btn {
 
     .form-input{
         margin-left: 11vw;
-        margin-right: 14vw;
+        margin-right: 10vw;
         width: 36vw;
         height: 36vh;
         display: -webkit-flex;
@@ -523,8 +531,7 @@ button.btn {
         flex-flow: column;
     }
 
-
-    .form-input{
+    .form-input {
         margin-left: 11vw;
         margin-right: 14vw;
         /*width: 100%;*/
@@ -535,7 +542,7 @@ button.btn {
         flex-flow: column;
     }
 
-    .form-input input{
+    .form-input input {
         margin-bottom: 5px;
         width: 50vw;
         height: 3.5vh;
@@ -544,7 +551,7 @@ button.btn {
         border: 1px solid #2980b9;
         font-size: 20px;
         color: #bcbfc0;
-        font-family: "Lato",sans-serif;
+        font-family: "Lato", sans-serif;
         font-style: italic;
     }
 
@@ -561,12 +568,120 @@ button.btn {
         cursor: pointer;
     }
 
-    .list{
+    .list {
         /*width: 100%;*/
         margin: 25px;
     }
 }
-                                                                                                                    </div>
+
+/*@media screen and (max-width: 992px) { */
+    /*div. contentblock {width: 970px;} }*/
+
+.carousel {
+    position: relative;
+    width: calc(100vw - 130px);
+    padding: 14px 55px;
+
+
+}
+.carousel img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+.arrow {
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    /*background: #ddd;*/
+    /*border-radius: 15px;*/
+    /*border: 1px solid gray;*/
+    /*font-size: 24px;*/
+
+    /*color: #444;*/
+    display: block;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 150px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
+p { line-height: 140%; }
+.big { font-size: 166%; }
+
+@media (min-width: 320px) {
+    p h2   { line-height: calc( 140% + 1vw - 3.2px ); }
+    .big { line-height: calc( 140% + (1vw - 3.2px) * 1.66 ); }
+}
+@media (min-width: 960px) {
+    p    { line-height: calc( 140% + 6.4px ); }
+    .big { line-height: calc( 140% + 6.4px * 1.66 ); }
+}
+input[type="checkbox"] {
+    display: none;
+}
+nav label {
+    display: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav label:hover{
+    color: #f00;
+    border: 1px solid #f00;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    nav label{
+        display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+
+}
+
+
+
 /*@media screen and (min-width: 700px) {*/
     /*.connect p {*/
         /*font-size: 28px;*/
