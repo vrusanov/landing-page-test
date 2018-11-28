@@ -1,10 +1,6 @@
 body {
     background-color: white;
     margin: 0 auto;
-    /*font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    /*font-size: 1.26vmax;*/
-    /*line-height: 1.9vmax;*/
-    /*color: #323232;*/
 }
 a {
     text-decoration:none;
@@ -34,36 +30,12 @@ ul {
     background-image: url("../src/pexels-photo-194094 (1).svg");
     background-size: cover;
     filter: grayscale(100%) brightness(20%);
-
 }
-/*#header {*/
-    /*width: 100%;*/
-    /*height: 100vh;*/
-    /*position: relative;*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-    /*background-image: url("../src/pexels-photo-194094 (1).svg");*/
-    /*!*filter: grayscale(100%) brightness(20%);*!*/
 
-
-
-/*}*/
-/*#header img {*/
-    /*filter: grayscale(100%) brightness(20%);*/
-
-/*}*/
 #top_header {
-
     padding: 170px 0 0 0;
     height: 55vh;
     overflow: hidden;
-    /*padding-top: 16
-
-
-
-
-    ....vh;*/
 }
 #name_company{
 
@@ -151,7 +123,6 @@ nav a {
     font-weight: 700;
     text-align: center;
     animation-name: show_header;
-    /*animation-duration: 1s;*/
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     z-index: 10000;
@@ -206,9 +177,8 @@ button.btn {
     padding-top: 31px;
     cursor: pointer;
 }
-
 #text_about p {
-    /*margin: 0 auto;*/
+
     font-family: NunitoSans, sans-serif;
     color:  #7f8a90;
     font-size: 2.067em;
@@ -221,8 +191,44 @@ button.btn {
     width: 100%;
     padding-top: 9vh;
     padding-bottom: 7vh;
-    /*height: 72vh;*/
 }
+.dig span{
+    color: #000000;
+    text-shadow:
+            -0   -3px 0   #F9F7F7,
+            0   -3px 0   #F9F7F7,
+            -0    3px 0   #F9F7F7,
+            0    3px 0   #F9F7F7,
+            -3px -0   0   #F9F7F7,
+            3px -0   0   #F9F7F7,
+            -3px  0   0   #F9F7F7,
+            3px  0   0   #F9F7F7,
+            -1px -3px 0   #F9F7F7,
+            1px -3px 0   #F9F7F7,
+            -1px  3px 0   #F9F7F7,
+            1px  3px 0   #F9F7F7,
+            -3px -1px 0   #F9F7F7,
+            3px -1px 0   #F9F7F7,
+            -3px  1px 0   #F9F7F7,
+            3px  1px 0   #F9F7F7,
+            -2px -3px 0   #F9F7F7,
+            2px -3px 0   #F9F7F7,
+            -2px  3px 0   #F9F7F7,
+            2px  3px 0   #F9F7F7,
+            -3px -2px 0   #F9F7F7,
+            3px -2px 0   #F9F7F7,
+            -3px  2px 0   #F9F7F7,
+            3px  2px 0   #F9F7F7,
+            -3px -3px 0   #F9F7F7,
+            3px -3px 0   #F9F7F7,
+            -3px  3px 0   #F9F7F7,
+            3px  3px 0   #F9F7F7,
+            -3px -3px 0   #F9F7F7,
+            3px -3px 0   #F9F7F7,
+            -3px  3px 0   #F9F7F7,
+            3px  3px 0   #F9F7F7;
+}
+
 #about h2 {
     text-transform: uppercase;
     font-family: NunitoSans, sans-serif;
@@ -253,15 +259,13 @@ button.btn {
 }
 
 .test{
-    /*font-family: NunitoSans;*/
     color:  #2a2a2a;
-    font-size: 4.343rem;/* Приближение из-за подстановки шрифтов */
+    font-size: 4.343rem;
     font-weight: 900;
     text-align: center;
-    transform: scaleY(1.0001);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    transform: scaleY(1.0001);
 }
 #portfolio {
-
     padding-top: 9vh;
     padding-bottom: 4.6vh;
     background-color:  #e2e1e1;
@@ -295,8 +299,6 @@ button.btn {
     margin-bottom: 13vh;
 }
 .box_img_gallery {
-    /*height: 20vmax;*/
-    /*width: 14v;*/
     margin-right: 3vw;
 }
 
@@ -326,7 +328,7 @@ button.btn {
     width: 100%;
     height: 56vh;
     position: absolute;
-    background-image: url("../partners/bg-partners.png");/* make a cove bg*/
+    background-image: url("../partners/bg-partners.png");
     background-size: cover;
     background-position-y: -1px;
     background-repeat: no-repeat;
@@ -347,24 +349,90 @@ button.btn {
     text-align: center;
 
 }
+.carousel {
+    position: relative;
+    width: calc(100vw - 130px);
+    padding: 14px 55px;
 
 
+}
+.carousel img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+.arrow {
+    outline: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    display: block;
+}
 
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 150px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+nav label {
+    color: #7f8a90;
+    margin-left: 5vw;
+    font-family: "Nunito Sans",sans-serif;
+    display: none;
+    border: 2px solid grey;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav label:hover{
+    color: #25d8d8;
+    border: 1px solid #25d8d8;
+}
 .btn:hover {
     background-color: #25d8d8;
 }
 .gallery-part {
-    /*margin-left: 7.3vh;*/
-    /*margin-right: 7.3vh;*/
-    /*width: 100vw;*/
     height: 17vh;
 }
 .box-img-part {
-    /*width: 100%;*/
     height: auto;
     overflow: hidden;
 }
-
 .arrow-part{
     height: 4vh;
 }
@@ -378,7 +446,6 @@ button.btn {
 .wrap__flex {
     display: flex;
     flex-wrap: wrap;
-    /*flex-flow: row;*/
 }
 
 #contact-list {
@@ -457,12 +524,17 @@ button.btn {
 }
 #btn-contact:hover {
     background-color: #f1f2f7;
-    color: #25d8d8;;
-
+    color: #25d8d8;
 }
 
-
 @media screen and (min-width: 768px){
+    #top_about {
+        width: 100%;
+    }
+    #text_about p {
+        font-size: 1.7em;
+        line-height: 2.5vh;
+    }
     .forma{
         display: flex;
         display: -webkit-flex;
@@ -494,21 +566,6 @@ button.btn {
         font-family: "Lato",sans-serif;
         font-style: italic;
     }
-    #form-input textarea {
-        text-align: left;
-        width: 30vw;
-        height: 13vh;
-        font-size: 20px;
-        color: #bcbfc0;
-        font-family: "Lato", sans-serif;
-        border-radius: 8px;
-        font-style: italic;
-        background-color: #f1f2f7;
-        border: 1px solid #2980b9;
-
-
-    }
-
     .form-input button {
         font-size: 20px;
         color: #ffffff;
@@ -524,6 +581,70 @@ button.btn {
 }
 
 @media screen and (max-width: 767px) {
+
+    #right_header a {
+        padding: 0;
+        writing-mode: horizontal-tb;
+    }
+    #right_header a:hover {
+        color: black;
+    }
+
+    #text_about p {
+        font-size: 1.7em;
+        line-height: 2.5vh;
+    }
+    #contact-list {
+        text-align: start;
+        font-size: 0.8em;
+        width: 83%;
+    }
+    #contact-list ul li {
+        font-size: 0.7em;
+        padding-bottom: 0.5vh;
+        margin-top: 8px;
+        margin-right: 11px;
+        list-style: none;
+        width: 9vw;
+    }
+    .form-input textarea {
+        text-align: left;
+        width: 75vw;
+        height: 13vh;
+        font-size: 20px;
+        color: #bcbfc0;
+        font-family: "Lato", sans-serif;
+        border-radius: 8px;
+        font-style: italic;
+        background-color: #f1f2f7;
+        border: 1px solid #2980b9;
+    }
+    .gallery_line-2 {
+        display: none;
+    }
+    .gallery_line-1{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    #gallery {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box_img_gallery img {
+        width: 30vw;
+        height: auto;
+        overflow: hidden;
+    }
+    .wrapper-btn {
+        text-align: center;
+        position: relative;
+        height: 5vh;
+    }
+    .btn-port {
+        margin-top: 37vh;
+
+    }
     .forma {
         display: flex;
         display: -webkit-flex;
@@ -534,8 +655,6 @@ button.btn {
     .form-input {
         margin-left: 11vw;
         margin-right: 14vw;
-        /*width: 100%;*/
-        /*height: 36vh;*/
         display: -webkit-flex;
         -webkit-flex-flow: column;
         align-items: center;
@@ -544,7 +663,7 @@ button.btn {
 
     .form-input input {
         margin-bottom: 5px;
-        width: 50vw;
+        width: 75vw;
         height: 3.5vh;
         border-radius: 8px;
         background-color: #f1f2f7;
@@ -569,104 +688,10 @@ button.btn {
     }
 
     .list {
-        /*width: 100%;*/
         margin: 25px;
     }
 }
-
-/*@media screen and (max-width: 992px) { */
-    /*div. contentblock {width: 970px;} }*/
-
-.carousel {
-    position: relative;
-    width: calc(100vw - 130px);
-    padding: 14px 55px;
-
-
-}
-.carousel img {
-    width: 150px;
-    height: 150px;
-    display: block;
-}
-.arrow {
-    outline: none; /* Для синий ободки */
-    border: 0;
-    background: transparent;
-    position: absolute;
-    top: 60px;
-    padding: 0;
-    /*background: #ddd;*/
-    /*border-radius: 15px;*/
-    /*border: 1px solid gray;*/
-    /*font-size: 24px;*/
-
-    /*color: #444;*/
-    display: block;
-}
-
-.arrow:focus {
-    outline: none;
-}
-
-.arrow:hover {
-    cursor: pointer;
-}
-
-.prev {
-    left: 7px;
-}
-
-.next {
-    right: 7px;
-}
-
-.gallery {
-    width: 100%;
-    overflow: hidden;
-}
-
-.gallery ul {
-    height: 150px;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    font-size: 0;
-}
-
-.gallery li {
-    display: inline-block;
-}
-p { line-height: 140%; }
-.big { font-size: 166%; }
-
-@media (min-width: 320px) {
-    p h2   { line-height: calc( 140% + 1vw - 3.2px ); }
-    .big { line-height: calc( 140% + (1vw - 3.2px) * 1.66 ); }
-}
-@media (min-width: 960px) {
-    p    { line-height: calc( 140% + 6.4px ); }
-    .big { line-height: calc( 140% + 6.4px * 1.66 ); }
-}
-input[type="checkbox"] {
-    display: none;
-}
-nav label {
-    display: none;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-nav label:hover{
-    color: #f00;
-    border: 1px solid #f00;
-}
-
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 730px) {
 
     nav label{
         display: inline-block;
@@ -679,36 +704,5 @@ nav label:hover{
     }
 
 }
-
-
-
-/*@media screen and (min-width: 700px) {*/
-    /*.connect p {*/
-        /*font-size: 28px;*/
-    /*}*/
-/*}*/
-
-/*@media screen and (min-width: 600px) and (max-width: 699px) {*/
-    /*.connect p {*/
-        /*font-size: 25px;*/
-    /*}*/
-/*}*/
-
-/*@media screen and (min-width: 500px) and (max-width: 599px) {*/
-    /*.connect p {*/
-        /*font-size: 21px;*/
-    /*}*/
-/*}*/
-
-/*@media screen and (min-width: 300px) and (max-width: 499px) {*/
-    /*.connect p {*/
-        /*font-size: 14px;*/
-    /*}*/
-/*}*/
-
-
-
-
-
 
 

@@ -31,10 +31,10 @@
              <input type="checkbox" name="menu" id="btn-menu" />
              <label for="btn-menu"> menu</label>
              <ul>
-             <li><a href="#contact">Contact</a></li>
-             <li><a href="#portfolio">Portfolio</a></li>
-             <li><a href="#about">About</a></li>
-               <li><a href="#header">Home</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#about">About</a></li>
+                   <li><a href="#header">Home</a></li>
            </ul>
          </nav>
      </div>
@@ -67,20 +67,20 @@
                             <div  style="display: flex;border-radius: 100%; background: black; width: 176px; height: 175px;display: flex; justify-content: center; align-items: center">
                                 <img src="about/star.svg" alt="">
                             </div>
-                            <div style="margin-left: -30px;">
-                                <span style="-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: white;font-size: 69px;letter-spacing: -1px;color: #2a2a2a;font-family: 'Nunito Sans'; font-weight: 800;text-align: center;">55</span>
+                            <div class="dig" style="margin-left: -30px;">
+                                <span  style="-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: white;font-size: 69px;letter-spacing: -1px;color: #2a2a2a;font-family: 'Nunito Sans'; font-weight: 800;text-align: center;">55</span>
                                 <p style="margin-left: 53px;margin-top: -10px">Projects</p>
                             </div>
                         </div>
-                         <div><span style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans', sans-serif;font-weight: 300;" >Creative Branding</span></div>
+                         <div class="dig"><span  style="font-size: 22px;letter-spacing: 0px;color: #282828;font-family:'Nunito Sans', sans-serif;font-weight: 300;" >Creative Branding</span></div>
                     </div>
                      <div class="about-icon" style="margin: 20px;">
                          <div class="main_flex__nowrap_row">
                              <div  style="display: flex;border-radius: 100%; background: black; width: 176px; height: 175px;display: flex; justify-content: center; align-items: center">
                                  <img src="about/phone.svg" alt="">
                              </div>
-                             <div style="margin-left: -30px;">
-                                 <span style="-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: white;font-size: 69px;letter-spacing: -1px;color: #2a2a2a;font-family: 'Nunito Sans'; font-weight: 800;text-align: center;">11</span>
+                             <div class="dig" style="margin-left: -30px;">
+                                 <span  style="-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: white;font-size: 69px;letter-spacing: -1px;color: #2a2a2a;font-family: 'Nunito Sans'; font-weight: 800;text-align: center;">11</span>
                                  <p style="margin-left: 53px;margin-top: -10px">Projects</p>
                              </div>
                          </div>
@@ -113,33 +113,33 @@
      </div>
     <div class="wrap">
         <div id="gallery">
-        <div class="gallery_line-1 main_flex__nowrap_row flex__jcontent_between">
-            <div class="box_img_gallery">
-                <a href=""><img src="port/1.svg"></a>
+            <div class="gallery_line-1 main_flex__nowrap_row flex__jcontent_between">
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/1.svg"></a>
+                </div>
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/2.svg"></a>
+                </div>
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/3.svg"></a>
+                </div>
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/4.svg"></a>
+                </div>
             </div>
-            <div class="box_img_gallery">
-                <a href=""><img src="port/2.svg"></a>
-            </div>
-            <div class="box_img_gallery">
-                <a href=""><img src="port/3.svg"></a>
-            </div>
-            <div class="box_img_gallery">
-                <a href=""><img src="port/4.svg"></a>
+            <div class="gallery_line-2 main_flex__nowrap_row flex__jcontent_around">
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/5.svg"></a>
+                </div>
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/6.svg"></a>
+                </div>
+                <div class="box_img_gallery">
+                    <a href=""><img src="port/7.svg"></a>
+                </div>
             </div>
         </div>
-        <div class="gallery_line-2 main_flex__nowrap_row flex__jcontent_around">
-            <div class="box_img_gallery">
-                <a href=""><img src="port/5.svg"></a>
-            </div>
-            <div class="box_img_gallery">
-                <a href=""><img src="port/6.svg"></a>
-            </div>
-            <div class="box_img_gallery">
-                <a href=""><img src="port/7.svg"></a>
-            </div>
-        </div>
-        </div>
-        <div class="wrapper-btn main_flex__nowrap flex__align-items_center">
+        <div class="btn-port wrapper-btn main_flex__nowrap flex__align-items_center">
             <button type="button" class="btn" id="view_more_gallery "><span>View More</span></button>
         </div>
     </div>
@@ -151,7 +151,6 @@
     <div class="wrap">
         <div style="display: inline-block; position: absolute;z-index: 99999"><button class="arrow-part arrow prev"><img style="height: 55px" src="src/arrows.svg"></button></div>
         <div id="carousel" class="carousel" style="display: inline-block">
-
             <div class="gallery">
                 <ul class="images">
                     <li><img src="partners/cp-part.svg"></li>
@@ -171,22 +170,8 @@
                     <li><img src="partners/indie-part.svg"></li>
                 </ul>
             </div>
-            <!--<button class="arrow-part-1 arrow next"><img style="height: 4vh" src="src/arrows.svg"></button>-->
         </div>
         <div style="display: inline-block; z-index: 99999;"><button class="arrow-part-1 arrow next"><img style="height: 55px" src="src/arrows.svg"></button></div>
-        <!--<div class="gallery-part main_flex__nowrap_row flex__jcontent_around">-->
-            <!--<div class="box-img-part arrow-part flex__jcontent_center">-->
-                <!--<img src="src/arrows.svg">-->
-            <!--</div>-->
-            <!--<div class="box-img-part"><img src="partners/cp-part.svg" alt=""></div>-->
-            <!--<div class="box-img-part"><img src="partners/marv.svg" alt=""></div>-->
-            <!--<div class="box-img-part"><img src="partners/Dell-part.svg" alt=""></div>-->
-            <!--<div class="box-img-part"><img src="partners/play-part.svg" alt=""></div>-->
-            <!--<div class="box-img-part"><img src="partners/indie-part.svg" alt=""></div>-->
-            <!--<div class="box-img-part arrow-part-1">-->
-                <!--<img src="src/arrows.svg">-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
 <div id="contact">
@@ -200,69 +185,37 @@
     </div>
     <div class="forma">
         <div class="form-input">
-            <form name="contact-form" method="post" ACTION="">
-                <input type="text" placeholder="Your Name..." required>
-                <input type="email" placeholder="Your Email..." required>
-                <textarea placeholder ="Your Massage..." required></textarea>
+            <form name="contact-form" method="post" action="#">
+                <input name="name-user" type="text" placeholder="Your Name..." required>
+                <input name="email-user" type="email" placeholder="Your Email..." required>
+                <textarea name="message-user" placeholder ="Your Massage..." required></textarea>
             </form>
             <div>
-                <button type="submit" class="" >Send</button>
+                <button name="submit" type="submit" class="" >Send</button>
             </div>
         </div>
         <div id="contact-list" class="contact-list main_flex__nowrap list">
             <div class="main_flex__nowrap_row flex__jcontent_around">
-                <ul class="main_flex__nowrap contact-list" style="margin-top: 8px">
+                <ul class="main_flex__nowrap contact-list" style="margin-top: -8px">
                     <li><span>Behance</span></li>
-                    <li><a href=""><img src="contact/download%20(1).png" alt=""></a></li>
-                    <li><a href=""><img src="contact/images.png" alt=""></a></li>
-                    <li><a href=""><img src="contact/images%20(1).png" alt=""></a></li>
+                    <li><a href="#"><img src="contact/download%20(1).png" alt=""></a></li>
+                    <li><a href="#"><img src="contact/images.png" alt=""></a></li>
+                    <li><a href="#"><img src="contact/images%20(1).png" alt=""></a></li>
                 </ul>
-                <div class="">
-                    <hr noshade style="height: 250px;/*высота*/ width: 0.5px;/*толщина*/">
+                <div>
+                    <hr noshade style="height: 250px; width: 0.5px;">
                 </div>
                 <div class="main_flex__nowrap contact-list">
-                    <p> <span><a href="">www.Be.net/Marwansamir99</a></span> </p>
-                    <p> <span><a href="">Marwansamir99</a></span></p>
-                    <p> <span><a href="">www.Facebook.com/Marvan.samir2</a></span> </p>
-                    <p> <span><a href="">Marwansamiir@gmail.com</a></span> </p>
+                    <p> <span><a href="#">www.Be.net/Marwansamir99</a></span> </p>
+                    <p> <span><a href="#">Marwansamir99</a></span></p>
+                    <p> <span><a href="#">www.Facebook.com/Marvan.samir2</a></span> </p>
+                    <p> <span><a href="#">Marwansamiir@gmail.com</a></span> </p>
                 </div>
             </div>
         </div>
-        <!--<div class="contact">-->
-            <!--<div class="main_flex__nowrap_row">-->
-                <!--<div>-->
-                    <!--<div style="display: flex; justify-content: center">-->
-                        <!--<span>Behance</span>-->
-                    <!--</div>-->
-                    <!--<div style="display: flex; justify-content: flex-end">-->
-                        <!--img-->
-                    <!--</div>-->
-                    <!--<div>-->
-                        <!--img-->
-                    <!--</div>-->
-                    <!--<div>-->
-                        <!--img-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<hr noshade style="height: 200px;/*высота*/ width: 1px;/*толщина*/">-->
-                <!--<div></div>-->
-            <!--</div>-->
-            <!--<div class="icon-contact">-->
-                <!--<h2>Behance</h2>-->
-                <!--<img src="" alt="">-->
-                <!--<img src="" alt="">-->
-                <!--<img src="" alt="">-->
-            <!--</div>-->
-            <!--<span></span>-->
-            <!--<div class="contact-adr">-->
-                <!--<p><a href=""></a></p>-->
-                <!--<p><a href=""></a></p>-->
-                <!--<p><a href=""></a></p>-->
-                <!--<p><a href=""></a></p>-->
-            <!--</div>-->
+
         </div>
     </div>
-</div>
  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
